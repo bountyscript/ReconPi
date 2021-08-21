@@ -109,7 +109,7 @@ gatherSubdomains() {
 	echo -e "[$GREEN+$RESET] Resolving subdomains.."
 	cat "$SUBS"/subdomains | sort -u | shuffledns -silent -d "$domain" -r "$IPS"/resolvers.txt > "$SUBS"/alive_subdomains
 	echo -e "[$GREEN+$RESET] Getting alive hosts.."
-	cat "$SUBS"/alive_subdomains | "$HOME"/go/bin/httprobe -prefer-https | tee "$SUBS"/hosts
+	cat "$SUBS"/alive_subdomains | "$HOME"/go/bin/httprobe -p 8080,8081,8089,443 | tee "$SUBS"/hosts
 	echo -e "[$GREEN+$RESET] Done."
 }
 
