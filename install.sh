@@ -416,7 +416,7 @@ finalizeSetup() {
 : 'Execute the main functions'
 displayLogo
 basicRequirements
-golangInstall
+#golangInstall
 golangTools
 additionalTools
 setupDashboard
