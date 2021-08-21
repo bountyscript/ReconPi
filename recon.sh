@@ -160,7 +160,7 @@ gatherIPs() {
 : 'Portscan on found IP addresses'
 portScan() {
 	startFunction  "Port Scan"
-	cat "$SUBS"/alive_subdomains | naabu -p - -silent -no-probe -exclude-cdn -nmap -config "$HOME"/ReconPi/configs/naabu.conf
+	cat "$SUBS"/alive_subdomains | naabu -p - -silent -exclude-cdn -nmap -config "$HOME"/ReconPi/configs/naabu.conf
     mv reconpi-nmap* "$PORTSCAN"
 	echo -e "[$GREEN+$RESET] Port Scan finished"
 }
