@@ -342,12 +342,12 @@ getCNAME
 gatherIPs
 gatherScreenshots
 startMeg
-#fetchArchive
-#fetchEndpoints
+fetchArchive
+fetchEndpoints
 startGfScan
 runNuclei
 portScan
-#makePage
+makePage
 notifySlack
 notifyDiscord
 
