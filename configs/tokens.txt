@@ -1,4 +1,4 @@
-github_subdomains_token=""
+github_subdomains_token="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"
 SLACK_WEBHOOK_URL="https://hooks.slack.com/services/xxx/xxx/xxx"
 DISCORD_WEBHOOK_URL="https://discordapp.com/api/webhooks/xxx/xxx"
 findomain_spyse_token=""
